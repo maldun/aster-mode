@@ -1,3 +1,5 @@
+
+=========
 aster-mode
 ==========
 
@@ -12,18 +14,16 @@ Vers: 0.1
 
 This is the aster-mode for emacs. Currently it only
 supports syntax highlighting, and automatic recognition
-
 of .comm files.
-It is derived from Python-mode and therefore supports 
-Python Syntax.
+It is derived from Python-mode and thus supports
+Python syntax.
 
 ===========
 
 Installing:
  
-
-
 Extract it to a folder and add the line
 
 (load "/dir/to/folder/aster-mode")
 
+to your ~/.emacs
