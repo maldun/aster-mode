@@ -21,9 +21,20 @@ Python syntax.
 ===========
 
 Installing:
- 
-Extract it to a folder and add the line
+
+===========
+
+Mode: 
+
+Extract aster-mode.el it to a folder and add the line
 
 (load "/dir/to/folder/aster-mode")
 
 to your ~/.emacs
+
+==========
+
+snippets:
+
+Install YA snippet and add contents of snippets
+in the folder /dir/to/yasnippet/snippets/aster-mode
