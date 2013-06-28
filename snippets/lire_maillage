@@ -1,0 +1,6 @@
+# name: lire_maillage
+# key: LIRE_MA
+# --
+LIRE_MAILLAGE(UNITE = ${1:20},
+	      FORMAT = ${2:'MED'},
+              );

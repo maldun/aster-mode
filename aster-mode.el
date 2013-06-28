@@ -70,7 +70,8 @@
 "OBSERVATION" "IMPR_RESU" "IMPR_GENE" "IMPR_TABLE" "IMPR_CO" 
 "INFO_RESU" "IMPR_JEVEUX" "TEST_RESU" "TEST_FONCTION" "TEST_TABLE" 
 "TEST_FICHIER" "TEST_TEMPS" "TEST_COMPOR" "ENGENDRE_TEST" "CF" 
-"CF" "MK" "PC" "PC" ) )
+"CF" "MK" "PC" "PC" "CALC_CHAMP" ) )
+
 (setq aster-functions '("_F") )
 
 (defvar aster-font-lock-keywords
