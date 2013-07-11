@@ -1,4 +1,4 @@
-# lire_maillage --- Aster Mode (snippet)
+# affe_char_meca --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com> or <stefan.reiterer@magnasteyr.com>
@@ -22,11 +22,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: lire_maillage
-# key: LIRE_MA
+# name: affe_modele
+# key: AFFE_CHAR
 # --
-LIRE_MAILLAGE(UNITE = ${1:20},
-	      FORMAT = ${2:'MED'},
-	      INFO = ${3:1},
-	      INFO_MED=${4:1},
+AFFE_CHAR_MECA(INFO = ${1:1},
+	       MODELE = ${2:Model},
+	       ${3:DDL_IMPO},
               );

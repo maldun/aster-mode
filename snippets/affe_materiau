@@ -1,4 +1,4 @@
-# lire_maillage --- Aster Mode (snippet)
+# affe_materiau --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com> or <stefan.reiterer@magnasteyr.com>
@@ -21,12 +21,13 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
-# name: lire_maillage
-# key: LIRE_MA
+# -*- coding: utf-8 -*-
+# name: affe_materiau
+# key: AFFE_MAT
 # --
-LIRE_MAILLAGE(UNITE = ${1:20},
-	      FORMAT = ${2:'MED'},
-	      INFO = ${3:1},
-	      INFO_MED=${4:1},
-              );
+AFFE_MATERIAU(MAILLAGE=${1:Mesh},
+	      AFFE=(_F(${2:TOUT='OUI'},
+	               MATER=${3:Material},
+		       ),
+		  ),
+	     );

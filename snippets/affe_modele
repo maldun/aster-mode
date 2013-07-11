@@ -1,4 +1,4 @@
-# lire_maillage --- Aster Mode (snippet)
+# affe_modele --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com> or <stefan.reiterer@magnasteyr.com>
@@ -22,11 +22,14 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: lire_maillage
-# key: LIRE_MA
+# name: affe_modele
+# key: AFFE_MOD
 # --
-LIRE_MAILLAGE(UNITE = ${1:20},
-	      FORMAT = ${2:'MED'},
-	      INFO = ${3:1},
-	      INFO_MED=${4:1},
+AFFE_MODELE(INFO = ${1:1},
+	      MAILLAGE = ${2:Mesh},
+	      AFFE = (_F(${3:TOUT = 'OUI'},
+	                 PHENOMENE=${4:'MECANIQUE'},
+			 MODELISATION='3D',
+			 ),
+		     ),
               );
