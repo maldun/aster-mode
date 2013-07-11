@@ -29,4 +29,5 @@
 ELAS = _F(E = ${1:YoungsMod},
           NU = ${2:PoissonsRatio},
 	  RHO = ${3:Density},
+	  ALPHA = ${4:ALPHA}
 	  ),

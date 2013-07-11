@@ -27,4 +27,5 @@
 # --
 LIRE_MAILLAGE(UNITE = ${1:20},
 	      FORMAT = ${2:'MED'},
+	      INFO = ${3:1},
               );
