@@ -1,4 +1,4 @@
-# lire_maillage --- Aster Mode (snippet)
+# pre_ideas --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com> or <stefan.reiterer@magnasteyr.com>
@@ -22,11 +22,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: lire_maillage
-# key: LIRE_MA
+# name: pre_ideas
+# key: PRE_IDEAS
 # --
-LIRE_MAILLAGE(UNITE = ${1:20},
-	      FORMAT = ${2:'MED'},
-	      INFO = ${3:1},
-	      ${4:INFO_MED=1,}
-              );
+PRE_IDEAS(UNITE_IDEAS = ${1:30},
+	  UNITE_MAILLAGE = ${2:20},
+	  CREA_GROUP_COUL = ${3:'NON'},
+          );
