@@ -303,12 +303,6 @@
      1 font-lock-builtin-face)
     ;;(,(regexp-opt '("DX" "DY" "DZ" "DRX" "DRY" "DRZ" "JUSQU_A" "PAS" "RESULTAT") 'words)
     ;; 1 font-lock-constant-face)
-    ;; cdef is used for more than functions, so simply highlighting the next
-    ;; word is problematic. struct, enum and property work though.
-    ;;("\\<\\(?:struct\\|enum\\)[ \t]+\\([a-zA-Z_]+[a-zA-Z0-9_]*\\)"
-    ;; 1 py-class-name-face)
-    ;;("\\<property[ \t]+\\([a-zA-Z_]+[a-zA-Z0-9_]*\\)"
-    ;; 1 font-lock-function-name-face))
     )
   "Additional font lock keywords for Aster mode.")
 
@@ -320,8 +314,6 @@
           (append python-font-lock-keywords aster-font-lock-keywords))
   ;;(set (make-local-variable 'compile-command)
   ;;     (concat "aster -a " buffer-file-name))
-  ;;(add-to-list (make-local-variable 'compilation-finish-functions)
-  ;;             'cython-compilation-finish)
 )
 
 (provide 'aster-mode)
