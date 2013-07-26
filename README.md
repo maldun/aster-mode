@@ -47,8 +47,9 @@ Installing:
 
 Mode: 
 
-Extract aster-mode.el it to a folder and add the line
+Extract aster-mode.el it to a folder and add the lines
 
+(setq asterDir "/opt/aster") ;; Dir to aster. Change if necessary!
 (load "/dir/to/folder/aster-mode")
 
 to your ~/.emacs

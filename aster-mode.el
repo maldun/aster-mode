@@ -294,12 +294,10 @@
 
 (setq aster-functions '("_F") )
 
+
 (defun aster-astk ()
   (interactive)  
-  (shell-command "nohup /home/maldun/Salome_Meca/Code_Aster/Intel/11/bin/astk &")
-  ;; (setq exec-path (append exec-path '("/home/maldun/Salome_Meca/Code_Aster/Intel/11/bin/")))
-  ;; (start-process "aster-astk" "astk" "astk")
-
+  (shell-command (concat "nohup " asterDir "bin/astk &"))
 )
 
 (defvar aster-font-lock-keywords
