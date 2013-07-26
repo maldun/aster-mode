@@ -322,6 +322,52 @@
   ;;     (concat "aster -a " buffer-file-name))
   ;;(add-to-list (make-local-variable 'compilation-finish-functions)
   ;;             'cython-compilation-finish)
+  ;;   (setq aster-mode-map (make-sparse-keymap))
+ (define-key aster-mode-map (kbd "s-d") 'comment-region) ; comment a region by shortcut Super+d
+ (define-key aster-mode-map (kbd "s-D") 'uncomment-region) ; uncomment a region by shortcut Super+Shift+d
+  ;; (define-key aster-mode-map [remap comment-region] 'comment-region) ; comment a region by shortcut 
+  ;; (define-key aster-mode-map [remap uncomment-region] 'uncomment-region) ; uncomment a region by shortcut
+  ;; define your menu
+  (define-key aster-mode-map [menu-bar] (make-sparse-keymap))
+  (let ((menuMap (make-sparse-keymap "Code_Aster")))
+    (define-key aster-mode-map [menu-bar aster] (cons "Code_Aster" menuMap))
+    (define-key menuMap [comment]
+      '("Comment Region" . comment-region))
+    (define-key menuMap [uncomment]
+      '("Uncomment Region" . uncomment-region))
+    (define-key menuMap [separator]
+      '("--"))
+    )
+
 )
+
+;; define a var for your keymap, so that you can set it as local map
+;; (meaning, active only when your mode is on)
+;; (defvar aster-mode-map nil "Keymap for aster-mode")
+
+;; ;; definition for your keybinding and menu
+;; (when (not aster-mode-map) ; if it is not already defined
+
+;;   (setq aster-mode-map (make-sparse-keymap))
+;; ;;  (define-key aster-mode-map (kbd "s-d") 'comment-region) ; comment a region by shortcut Super+d
+;; ;;  (define-key aster-mode-map (kbd "s-D") 'uncomment-region) ; uncomment a region by shortcut Super+Shift+d
+;;   (define-key aster-mode-map [remap comment-region] 'aster-comment-region) ; comment a region by shortcut 
+;;   (define-key aster-mode-map [remap uncomment-region] 'aster-uncomment-region) ; uncomment a region by shortcut
+
+;;   ;; define your menu
+;;   (define-key aster-mode-map [menu-bar] (make-sparse-keymap))
+
+;;   (let ((menuMap (make-sparse-keymap "Code_Aster")))
+;;     (define-key aster-mode-map [menu-bar aster] (cons "Code_Aster" menuMap))
+
+    
+;;     (define-key menuMap [comment]
+;;       '("Comment Region" . aster-comment-region))
+;;     (define-key menuMap [uncomment]
+;;       '("Uncomment Region" . aster-uncomment-region))
+;;     (define-key menuMap [separator]
+;;       '("--"))
+;;     )
+;; )
 
 (provide 'aster-mode)
