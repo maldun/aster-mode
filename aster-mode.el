@@ -294,6 +294,14 @@
 
 (setq aster-functions '("_F") )
 
+(defun aster-astk ()
+  (interactive)  
+  (shell-command "nohup /home/maldun/Salome_Meca/Code_Aster/Intel/11/bin/astk &")
+  ;; (setq exec-path (append exec-path '("/home/maldun/Salome_Meca/Code_Aster/Intel/11/bin/")))
+  ;; (start-process "aster-astk" "astk" "astk")
+
+)
+
 (defvar aster-font-lock-keywords
   `(;; new keywords in CODE_ASTER
     (,(regexp-opt aster-keywords 'words)
@@ -319,6 +327,7 @@
   ;;   (setq aster-mode-map (make-sparse-keymap))
  (define-key aster-mode-map (kbd "s-d") 'comment-region) ; comment a region by shortcut Super+d
  (define-key aster-mode-map (kbd "s-D") 'uncomment-region) ; uncomment a region by shortcut Super+Shift+d
+ (define-key aster-mode-map (kbd "s-a") 'aster-astk) ; call astk
   ;; (define-key aster-mode-map [remap comment-region] 'comment-region) comment a region by shortcut 
   ;; (define-key aster-mode-map [remap uncomment-region] 'uncomment-region) uncomment a region by shortcut
   ;; define your menu
@@ -331,6 +340,8 @@
       '("Uncomment Region" . uncomment-region))
     (define-key menuMap [separator]
       '("--"))
+    (define-key menuMap [astk]
+      '("Start astk" . aster-astk))
     )
 
 )
