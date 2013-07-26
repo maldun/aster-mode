@@ -303,12 +303,6 @@
      1 font-lock-builtin-face)
     ;;(,(regexp-opt '("DX" "DY" "DZ" "DRX" "DRY" "DRZ" "JUSQU_A" "PAS" "RESULTAT") 'words)
     ;; 1 font-lock-constant-face)
-    ;; cdef is used for more than functions, so simply highlighting the next
-    ;; word is problematic. struct, enum and property work though.
-    ;;("\\<\\(?:struct\\|enum\\)[ \t]+\\([a-zA-Z_]+[a-zA-Z0-9_]*\\)"
-    ;; 1 py-class-name-face)
-    ;;("\\<property[ \t]+\\([a-zA-Z_]+[a-zA-Z0-9_]*\\)"
-    ;; 1 font-lock-function-name-face))
     )
   "Additional font lock keywords for Aster mode.")
 
@@ -325,8 +319,8 @@
   ;;   (setq aster-mode-map (make-sparse-keymap))
  (define-key aster-mode-map (kbd "s-d") 'comment-region) ; comment a region by shortcut Super+d
  (define-key aster-mode-map (kbd "s-D") 'uncomment-region) ; uncomment a region by shortcut Super+Shift+d
-  ;; (define-key aster-mode-map [remap comment-region] 'comment-region) ; comment a region by shortcut 
-  ;; (define-key aster-mode-map [remap uncomment-region] 'uncomment-region) ; uncomment a region by shortcut
+  ;; (define-key aster-mode-map [remap comment-region] 'comment-region) comment a region by shortcut 
+  ;; (define-key aster-mode-map [remap uncomment-region] 'uncomment-region) uncomment a region by shortcut
   ;; define your menu
   (define-key aster-mode-map [menu-bar] (make-sparse-keymap))
   (let ((menuMap (make-sparse-keymap "Code_Aster")))
@@ -341,33 +335,5 @@
 
 )
 
-;; define a var for your keymap, so that you can set it as local map
-;; (meaning, active only when your mode is on)
-;; (defvar aster-mode-map nil "Keymap for aster-mode")
-
-;; ;; definition for your keybinding and menu
-;; (when (not aster-mode-map) ; if it is not already defined
-
-;;   (setq aster-mode-map (make-sparse-keymap))
-;; ;;  (define-key aster-mode-map (kbd "s-d") 'comment-region) ; comment a region by shortcut Super+d
-;; ;;  (define-key aster-mode-map (kbd "s-D") 'uncomment-region) ; uncomment a region by shortcut Super+Shift+d
-;;   (define-key aster-mode-map [remap comment-region] 'aster-comment-region) ; comment a region by shortcut 
-;;   (define-key aster-mode-map [remap uncomment-region] 'aster-uncomment-region) ; uncomment a region by shortcut
-
-;;   ;; define your menu
-;;   (define-key aster-mode-map [menu-bar] (make-sparse-keymap))
-
-;;   (let ((menuMap (make-sparse-keymap "Code_Aster")))
-;;     (define-key aster-mode-map [menu-bar aster] (cons "Code_Aster" menuMap))
-
-    
-;;     (define-key menuMap [comment]
-;;       '("Comment Region" . aster-comment-region))
-;;     (define-key menuMap [uncomment]
-;;       '("Uncomment Region" . aster-uncomment-region))
-;;     (define-key menuMap [separator]
-;;       '("--"))
-;;     )
-;; )
 
 (provide 'aster-mode)
