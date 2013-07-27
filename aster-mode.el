@@ -300,6 +300,11 @@
   (shell-command (concat "nohup " asterDir "bin/astk &"))
 )
 
+(defun aster-eficas ()
+  (interactive)
+  (shell-command (concat "nohup " asterDir "bin/eficas &"))
+)
+
 (defvar aster-font-lock-keywords
   `(;; new keywords in CODE_ASTER
     (,(regexp-opt aster-keywords 'words)
@@ -339,9 +344,10 @@
     (define-key menuMap [separator]
       '("--"))
     (define-key menuMap [astk]
-      '("Start astk" . aster-astk))
+      '("Launch astk" . aster-astk))
+    (define-key menuMap [eficas]
+      '("Launch eficas" . aster-eficas))
     )
-
 )
 
 
