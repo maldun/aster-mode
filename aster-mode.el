@@ -294,6 +294,17 @@
 
 (setq aster-functions '("_F") )
 
+
+(defun aster-astk ()
+  (interactive)  
+  (shell-command (concat "nohup " asterDir "bin/astk &"))
+)
+
+(defun aster-eficas ()
+  (interactive)
+  (shell-command (concat "nohup " asterDir "bin/eficas &"))
+)
+
 (defvar aster-font-lock-keywords
   `(;; new keywords in CODE_ASTER
     (,(regexp-opt aster-keywords 'words)
@@ -314,6 +325,28 @@
           (append python-font-lock-keywords aster-font-lock-keywords))
   ;;(set (make-local-variable 'compile-command)
   ;;     (concat "aster -a " buffer-file-name))
+
+ (define-key aster-mode-map (kbd "s-d") 'comment-region) ; comment a region by shortcut Super+d
+ (define-key aster-mode-map (kbd "s-D") 'uncomment-region) ; uncomment a region by shortcut Super+Shift+d
+ (define-key aster-mode-map (kbd "s-a") 'aster-astk) ; call astk
+  ;; (define-key aster-mode-map [remap comment-region] 'comment-region) comment a region by shortcut 
+  ;; (define-key aster-mode-map [remap uncomment-region] 'uncomment-region) uncomment a region by shortcut
+  ;; define your menu
+  (define-key aster-mode-map [menu-bar] (make-sparse-keymap))
+  (let ((menuMap (make-sparse-keymap "Code_Aster")))
+    (define-key aster-mode-map [menu-bar aster] (cons "Code_Aster" menuMap))
+    (define-key menuMap [comment]
+      '("Comment Region" . comment-region))
+    (define-key menuMap [uncomment]
+      '("Uncomment Region" . uncomment-region))
+    (define-key menuMap [separator]
+      '("--"))
+    (define-key menuMap [astk]
+      '("Launch astk" . aster-astk))
+    (define-key menuMap [eficas]
+      '("Launch eficas" . aster-eficas))
+    )
 )
+
 
 (provide 'aster-mode)
