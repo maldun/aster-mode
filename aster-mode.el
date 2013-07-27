@@ -328,7 +328,8 @@
 
  (define-key aster-mode-map (kbd "s-d") 'comment-region) ; comment a region by shortcut Super+d
  (define-key aster-mode-map (kbd "s-D") 'uncomment-region) ; uncomment a region by shortcut Super+Shift+d
- (define-key aster-mode-map (kbd "s-a") 'aster-astk) ; call astk
+ (define-key aster-mode-map (kbd "s-A") 'aster-astk) ; call astk
+ (define-key aster-mode-map (kbd "s-E") 'aster-astk) ; call astk
   ;; (define-key aster-mode-map [remap comment-region] 'comment-region) comment a region by shortcut 
   ;; (define-key aster-mode-map [remap uncomment-region] 'uncomment-region) uncomment a region by shortcut
   ;; define your menu
