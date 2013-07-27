@@ -6,7 +6,7 @@ Author: Stefan Reiterer
 Date: 
 06/17/2013
 
-Vers: 0.1
+Vers: 0.2
 
 License
 =======
@@ -58,5 +58,7 @@ to your ~/.emacs
 
 snippets:
 
-Install YA snippet and add contents of snippets
-in the folder /dir/to/yasnippet/snippets/aster-mode
+Install YA snippet https://github.com/capitaomorte/yasnippet 
+and add contents of snippets in the folder 
+
+/dir/to/yasnippet/snippets/aster-mode
