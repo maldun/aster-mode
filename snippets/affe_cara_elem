@@ -1,0 +1,31 @@
+# affe_cara_elem --- Aster Mode (snippet)
+#
+
+# Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com> or <stefan.reiterer@magnasteyr.com>
+# Keywords: languages, processes, python, oop, Code_Aster
+
+# Copyright (C) 2013  Stefan Reiterer
+
+# Author: 2013 Stefan Reiterer
+#    
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+# name: affe_cara_elem
+# key: AFFE_CARA_ELEM
+# --
+AFFE_CARA_ELEM(INFO = ${1:1},
+	       MODELE = ${2:Model},
+	       ${3:COQUE}
+              );
