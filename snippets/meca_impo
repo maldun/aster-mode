@@ -1,4 +1,4 @@
-# affe_char_meca --- Aster Mode (snippet)
+# meca_impo --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com> or <stefan.reiterer@magnasteyr.com>
@@ -22,10 +22,13 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: affe_char_meca
-# key: AFFE_CHAR_MECA
+# name: meca_impo
+# key: MECA_IMPO
 # --
-AFFE_CHAR_MECA(INFO = ${1:1},
-	       MODELE = ${2:Model},
-	       ${3:DDL_IMPO},
-              );
+MECA_IMPO=(_F(GROUP_MA=${1:group_name},
+	     DX = ${2:0.0},
+             DY = ${3:0.0},
+             DZ = ${4:0.0},
+             ),
+	   ),
+  
