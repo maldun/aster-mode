@@ -22,7 +22,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: affe_modele
+# name: affe_char_meca
 # key: AFFE_CHAR
 # --
 AFFE_CHAR_MECA(INFO = ${1:1},
