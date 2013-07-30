@@ -29,5 +29,6 @@ DEFI_GROUP(${1:reuse = Mesh},
            MAILLAGE=${2:Mesh},
 	   ${3:CREA_GROUP_MA}=_F(${4:NOM=},
 	                         ${5:TOUT='OUI'},
+				 ${6:TYPE_MAILLE = '3D',}
 	                        ),
 	  );
