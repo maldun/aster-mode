@@ -27,5 +27,5 @@
 # --
 AFFE_CHAR_MECA(INFO = ${1:1},
 	       MODELE = ${2:Model},
-	       ${3:DDL_IMPO},
+	       ${3:DDL_IMPO}
               );

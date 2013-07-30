@@ -31,4 +31,3 @@ MECA_IMPO=(_F(GROUP_MA=('${1:group_name}'),
              DZ = ${4:0.0},
              ),
 	   ),
-  

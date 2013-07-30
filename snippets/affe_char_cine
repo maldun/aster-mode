@@ -26,5 +26,5 @@
 # key: AFFE_CHAR_CINE
 # --
 AFFE_CHAR_CINE(MODELE=${1:Model}, 
-               ${2:MECA_IMPO},
+               ${2:MECA_IMPO}
 	       );
