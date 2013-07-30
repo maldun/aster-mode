@@ -25,11 +25,8 @@
 # name: liaison_mail
 # key: LIAISON_MA
 # --
-LIAISON_MAIL=(_F(TYPE_RACCORD=${1:'MASSIF'}, # contact
-                 GROUP_MA_ESCL=${2:group_esclave},
-                 GROUP_MA_MAIT=${3:group_ma},
-                 # CHAM_NORMALE=normal, #  for COQUE_MASSIF
-                 # EPAIS=thickness,     #  for COQUE_MAFFIF
+LIAISON_MAIL=(_F(TYPE_RACCORD='${1:MASSIF}', # contact
+                 GROUP_MA_ESCL='${2:group_esclave}',
+                 GROUP_MA_MAIT='${3:group_ma}',
 		 ),
-	     );
-                                                     ),
+	     ),
