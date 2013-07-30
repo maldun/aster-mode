@@ -25,9 +25,9 @@
 # name: ddl_impo
 # key: DDL_IMPO
 # --
-DDL_IMPO = (_F(GROUP_MA=${1:group_name},
+DDL_IMPO = (_F(GROUP_MA=('${1:group_name}'),
 	       DX=${2:0.0},
 	       DY=${3:0.0},
 	       DZ=${4:0.0},
 	       ),
-            )
+            ),
