@@ -25,7 +25,7 @@
 # name: meca_impoco
 # key: MECA_IMPOco
 # --
-MECA_IMPO=(_F(GROUP_MA=${1:group_name},
+MECA_IMPO=(_F(GROUP_MA=('${1:group_name}'),
 	     DX = ${2:0.0},
              DY = ${3:0.0},
              DZ = ${4:0.0},
