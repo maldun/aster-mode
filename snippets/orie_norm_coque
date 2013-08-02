@@ -27,5 +27,5 @@
 # --
 ORIE_NORM_COQUE=_F(GROUP_MA='${1:name}',
                    VECT_NORM=${2:(1,1,1,)},
-                   NOEUD='${3:nouds}',
+                   ${3:NOEUD or GROUP_MO}='${4:nouds}',
                    ),
