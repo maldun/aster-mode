@@ -27,5 +27,5 @@
 # --
 AFFE_CARA_ELEM(INFO = ${1:1},
 	       MODELE = ${2:Model},
-	       ${3:COQUE}
+	       ${3:COQUEel}
               );
