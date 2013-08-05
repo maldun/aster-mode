@@ -23,7 +23,7 @@
 
 
 # name: liaison_mailcm
-# key: LIAISON_MAcm
+# key: LIAISON_MAILcm
 # --
 LIAISON_MAIL=(_F(TYPE_RACCORD='${1:COQUE_MASSIF}', # contact
                  GROUP_MA_ESCL='${2:group_esclave}',

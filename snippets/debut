@@ -23,7 +23,7 @@
 
 
 # name: debut
-# key: DEB
+# key: DEBUT
 # --
 DEBUT(LANG = ${1:'IN'});
 

@@ -23,7 +23,7 @@
 
 # -*- coding: utf-8 -*-
 # name: defi_materiau
-# key: DEFI_MAT
+# key: DEFI_MATERIAU
 # --
 DEFI_MATERIAU(${1:ELAS}
 	  );

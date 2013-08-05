@@ -23,7 +23,7 @@
 
 # -*- coding: utf-8 -*-
 # name: defi_group
-# key: DEFI_GR
+# key: DEFI_GROUP
 # --
 DEFI_GROUP(${1:reuse = Mesh},
            MAILLAGE=${2:Mesh},

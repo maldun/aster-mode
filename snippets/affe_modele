@@ -23,7 +23,7 @@
 
 
 # name: affe_modele
-# key: AFFE_MOD
+# key: AFFE_MODELE
 # --
 AFFE_MODELE(INFO = ${1:1},
 	      MAILLAGE = ${2:Mesh},

@@ -23,7 +23,7 @@
 
 
 # name: lire_maillage
-# key: LIRE_MA
+# key: LIRE_MAILLAGE
 # --
 LIRE_MAILLAGE(UNITE = ${1:20},
 	      FORMAT = ${2:'MED'},

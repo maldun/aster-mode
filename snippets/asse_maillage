@@ -24,7 +24,7 @@
 
 # -*- coding: utf-8 -*-
 # name: asse_maillage
-# key: ASSE_MA
+# key: ASSE_MAILLAGE
 # --
 ASSE_MAILLAGE(MAILLAGE_1 = ${1:Mesh_1},
               MAILLAGE_2 = ${2:Mesh_2},

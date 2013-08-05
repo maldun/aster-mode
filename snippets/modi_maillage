@@ -23,7 +23,7 @@
 
 # -*- coding: utf-8 -*-
 # name: modi_maillage
-# key: MODI_MA
+# key: MODI_MAILLAGE
 # --
 MODI_MAILLAGE(reuse=${1:Mesh},
               MAILLAGE=$1,
