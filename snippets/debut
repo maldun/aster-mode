@@ -26,3 +26,5 @@
 # key: DEB
 # --
 DEBUT(LANG = ${1:'IN'});
+
+FIN();
