@@ -25,6 +25,6 @@
 # name: debut
 # key: DEBUT
 # --
-DEBUT(LANG = ${1:'IN'});
+DEBUT(LANG = ${1:'EN'});
 
 FIN();
