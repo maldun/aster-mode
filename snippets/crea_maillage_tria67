@@ -30,5 +30,8 @@ CREA_MAILLAGE(MAILLAGE=${1:Mesh},
                               OPTION='TRIA6_7',
                               PREF_NOEUD='${2:NT}',
                               ),
+			      _F(TOUT='OUI',
+                                 OPTION='QUAD8_9',
+                                 PREF_NOEUD='$2',),
                            ),
               );
