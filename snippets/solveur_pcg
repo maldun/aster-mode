@@ -25,7 +25,7 @@
 # name: solveur_pcg
 # key: SOLVEURpcg
 # --
-SOLVEUR=_F(METHODE='PCG',
+SOLVEUR=_F(METHODE='GCPC',
            PRE_COND='${1:LDLT_INC}',
            NMAX_ITER=${2:0},
            RESI_RELA=${3:1e-6},
