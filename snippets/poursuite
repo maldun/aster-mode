@@ -25,6 +25,6 @@
 # name: poursuite
 # key: POURSUITE
 # --
-POURSUITE(LANG = ${1:'IN'});
+POURSUITE(LANG = ${1:'EN'});
 
 FIN();
