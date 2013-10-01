@@ -1,7 +1,7 @@
 ;; aster-mode.el --- Aster Mode (Modified from Cython mode)
 ;;
 
-;; Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com> or <stefan.reiterer@magnasteyr.com>
+;; Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
 ;; Keywords: languages, processes, python, oop, Code_Aster
 
 ;; Copyright (C) 2013  Stefan Reiterer
