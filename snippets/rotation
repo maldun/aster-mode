@@ -26,9 +26,8 @@
 # key: ROTATION
 # --
 ROTATION = (_F(${1:TOUT='OUI',}
-               MAILLE='${2:Mesh}',
-               VITESSE=${3:1.0},
-               AXE = ${4:(1.0,0.0,0.0)},
-               CENTRE = ${5:(0.0,0.0,0.0)},
+               VITESSE=${2:1.0},
+               AXE = ${3:(1.0,0.0,0.0)},
+               CENTRE = ${4:(0.0,0.0,0.0)},
               ),
             ),
