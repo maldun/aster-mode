@@ -25,7 +25,7 @@
 # name: rotation
 # key: ROTATION
 # --
-ROTATION = (_F(${1:TOUT='OUI',}
+ROTATION = (_F(${1:TOUT='OUI'},
                VITESSE=${2:1.0},
                AXE = ${3:(1.0,0.0,0.0)},
                CENTRE = ${4:(0.0,0.0,0.0)},
