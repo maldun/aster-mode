@@ -25,7 +25,7 @@
 # name: force_face
 # key: FORCE_FACE
 # --
-FORCE_FACE=_F(GROUP_NO = '${1:group_name}',
+FORCE_FACE=_F(GROUP_MA = '${1:group_name}',
               FX=${2:0.0},
               FY=${3:0.0},
               FZ=${4:0.0},
