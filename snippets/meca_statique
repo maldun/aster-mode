@@ -25,10 +25,11 @@
 # name: meca_statique
 # key: MECA_STATIQUE
 # --
-MECA_STATIQUE(MODELE=${1:Model},
-              CHAM_MATER=${2:Material},
-              ${3:CARA_ELEM=Shell},
-              EXCIT=(_F(CHARGE=${4:BoundFix},
+MECA_STATIQUE(INFO=${1:1},
+	      MODELE=${2:Model},
+              CHAM_MATER=${3:Material},
+              ${4:CARA_ELEM=Shell},
+              EXCIT=(_F(CHARGE=${5:BoundFix},
                         ),
                      ),
               );
