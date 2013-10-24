@@ -1,0 +1,47 @@
+# calc_champ --- Aster Mode (snippet)
+#
+
+# Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+# Keywords: languages, processes, python, oop, Code_Aster
+
+# Copyright (C) 2013  Stefan Reiterer
+
+# Author: 2013 Stefan Reiterer
+#    
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+# name: calc_champ
+# key: CALC_CHAMP
+# --
+CALC_CHAMP(reuse = Result,
+           RESULTAT = Result,
+           ${1:CONTRAINTE = ('SIGM_ELNO',
+                         'SIGM_NOEU',
+                         'SIEF_NOEU',
+                     ),}
+           ${2:DEFORMATION = ('EPSI_ELGA',
+                              'EPSI_ELNO',
+                              'EPSI_NOEU',
+                          ),}
+           ${3:CRITERES = ('SIEQ_NOEU','SIEQ_ELNO',
+                       ),}
+           ${4:FORCE = ('FORC_NODA',
+                        'REAC_NODA',
+                    ),}
+           ${5:ENERGIE = ('ENEL_ELGA',
+                          'ENEL_ELNO',
+                          'ENEL_NOEU',
+                      ),}
+       );
