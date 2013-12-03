@@ -1,4 +1,4 @@
-# stat_non_line --- Aster Mode (snippet)
+# ramp --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
@@ -22,24 +22,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: stat_non_line
-# key: STAT_NON_LINE
+# -*- coding: utf-8 -*-
+# name: ramp
+# key: RAMP
 # --
-STAT_NON_LINE(INFO=${1:1},
-              MODELE=${2:Model},
-              CHAM_MATER=${3:Material},
-              EXCIT=(${4:_F(CHARGE=Boundknt,),
-                     _F(CHARGE=Boundary,TYPE_CHARGE='FIXE',FONC_MULT=Fonc),}
-                 ),
-              ${5:COMP_INCR}
-              ${6:COMP_ELASt}
-              INCREMENT=_F(LIST_INST=${7:ListInst},),
-              ${8:RECH_LINEAIRE}
-              ${9:NEWTON}
-              ${10:CONVERGENCE}
-              ARCHIVAGE=_F(LIST_INST=${11:Archive},
-                       ),
-              ${12:SOLVEURmult}
-	      ${13:CONTACT=Contact,}
-          );
-
+DEFI_FONCTION(NOM_PARA='INST',VALE=(0.0,0.0,
+                         1.0,1.0,
+                         ),);
