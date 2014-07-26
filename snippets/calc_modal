@@ -30,5 +30,4 @@ CALC_MODAL(INFO = ${1:1},
            CHAM_MATER=${3:Material},
            CHARGE = ${4:Boundary},
            ${5:CALC_FREQBande}
-	              ),
            );

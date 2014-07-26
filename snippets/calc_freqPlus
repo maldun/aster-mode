@@ -26,5 +26,5 @@
 # key: CALC_FREQPlus
 # --
 CALC_FREQ=_F(OPTION='PLUS_PETITE',
-             NMAX_FREQ={1:10},
+             NMAX_FREQ=${1:10},
              ),
