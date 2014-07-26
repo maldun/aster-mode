@@ -25,5 +25,6 @@
 # name: calc_freqBande
 # key: CALC_FREQBande
 # --
-'BANDE',
-FREQ = (200,500,),
+CALC_FREQ=_F(OPTION = 'BANDE',
+             FREQ=(${1:0},${2:500},),
+             ),

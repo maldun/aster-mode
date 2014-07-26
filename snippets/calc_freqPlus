@@ -22,13 +22,9 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: calc_modal
-# key: CALC_MODAL
+# name: calc_freqPlus
+# key: CALC_FREQPlus
 # --
-CALC_MODAL(INFO = ${1:1},
-           MODELE = ${2:Model},
-           CHAM_MATER=${3:Material},
-           CHARGE = ${4:Boundary},
-           ${5:CALC_FREQBande}
-	              ),
-           );
+CALC_FREQ=_F(OPTION='PLUS_PETITE',
+             NMAX_FREQ={1:10},
+             ),
