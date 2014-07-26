@@ -1,0 +1,34 @@
+# affe_cara_elem --- Aster Mode (snippet)
+#
+
+# Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+# Keywords: languages, processes, python, oop, Code_Aster
+
+# Copyright (C) 2013  Stefan Reiterer
+
+# Author: 2013 Stefan Reiterer
+#    
+# This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+# name: calc_modal
+# key: CALC_MODAL
+# --
+CALC_MODAL(INFO = ${1:1},
+           MODELE = ${2:Model},
+           CHAM_MATER=${3:Material},
+           CHARGE = ${4:Boundary},
+           CALC_FREQ=_F(OPTION = ${5:CALC_FREQBande}
+	              ),
+           );
