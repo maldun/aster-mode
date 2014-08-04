@@ -25,6 +25,8 @@
 # name: poursuite
 # key: POURSUITE
 # --
-POURSUITE(LANG = ${1:'EN'});
+POURSUITE(LANG = ${1:'EN'},
+	  PAR_LOT=${2:'OUI'},
+          );
 
 FIN();
