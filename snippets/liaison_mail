@@ -28,7 +28,7 @@
 LIAISON_MAIL=(_F(TYPE_RACCORD='${1:MASSIF}', # contact
                  GROUP_MA_ESCL='${2:group_esclave}',
                  GROUP_MA_MAIT='${3:group_ma}',
-		 # DDL_MAIT='DNOR',
-                 # DDL_ESCL='DNOR',
+		 ${4:DDL_MAIT='DNOR',}
+                 ${5:DDL_ESCL='DNOR',}
 		 ),
 	     ),
