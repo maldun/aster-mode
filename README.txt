@@ -11,7 +11,7 @@ Vers: 0.2
 License
 =======
 
-Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 
 Copyright (C) 2013 Stefan Reiterer
 
