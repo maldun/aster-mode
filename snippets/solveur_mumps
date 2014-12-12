@@ -1,4 +1,4 @@
-# defi_group --- Aster Mode (snippet)
+# solveur_mumps --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -21,11 +21,17 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# -*- coding: utf-8 -*-
-# name: defi_group
-# key: DEFI_GROUP
+
+# name: solveur_mumps
+# key: SOLVEURmumps
 # --
-DEFI_GROUP(${1:reuse = Mesh},
-           MAILLAGE=${2:Mesh},
-	   ${3:DEFI_GROUP_MA$$(yas-choose-value '("DEFI_GROUP_MA" "DEFI_GROUP_NO"))}
-	  );
+SOLVEUR=_F(METHODE='MUMPS',
+           STOP_SINGULIER='${1:OUI}',
+           NPREC=${2:16},
+	   RENUM='${3:AUTO}',
+	   RESI_RELA=${4:-1.0},
+	   ${5:MATR_DISTRIBUEE='NON',}
+	   ${6:GESTION_MEMOIRE='AUTO',}
+	   ${7:PCENT_PIVOT=20,}
+	   ${8:SYME='NON',}
+           ),

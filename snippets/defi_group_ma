@@ -1,4 +1,4 @@
-# defi_group --- Aster Mode (snippet)
+# defi_group_ma --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,10 +22,11 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # -*- coding: utf-8 -*-
-# name: defi_group
-# key: DEFI_GROUP
+# name: defi_group_ma
+# key: DEFI_GROUP_MA
 # --
-DEFI_GROUP(${1:reuse = Mesh},
-           MAILLAGE=${2:Mesh},
-	   ${3:DEFI_GROUP_MA$$(yas-choose-value '("DEFI_GROUP_MA" "DEFI_GROUP_NO"))}
-	  );
+CREA_GROUP_MA=(_F(NOM='${4:Group_1}',
+                  ${7:TOUT='OUI',
+                      TYPE_MAILLE='3D',$$(yas-choose-value '("TOUT='OUI', \n                             TYPE_MAILLE='3D'," "DIFFE=('Grp_1','Grp_2',)," "UNION=('Grp_1','Grp_2',)," "INTERSEC=('Grp_1','Grp_2',),"))}
+                  ),
+                ),
