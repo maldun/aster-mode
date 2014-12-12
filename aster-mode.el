@@ -1,12 +1,12 @@
 ;; aster-mode.el --- Aster Mode (Modified from Cython mode)
 ;;
 
-;; Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+;; Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 ;; Keywords: languages, processes, python, oop, Code_Aster
 
-;; Copyright (C) 2013  Stefan Reiterer
+;; Copyright (C) 2014  Stefan Reiterer
 
-;; Author: 2013 Stefan Reiterer
+;; Author: 2014 Stefan Reiterer
 ;;    
 ;; This program is free software: you can redistribute it and/or modify
 ;;    it under the terms of the GNU General Public License as published by
@@ -31,6 +31,7 @@
 
 ;; Aster Keyword Collection
 (setq aster-keywords '(
+"ASSEMBLAGE"
 "CALC_CHAMP" 
 "AFFE_CHAR_CINE_F" 
 "AFFE_CHAR_MECA_F"
