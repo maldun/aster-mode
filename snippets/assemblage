@@ -1,4 +1,4 @@
-# calc_freqPlus --- Aster Mode (snippet)
+# assemblage --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,9 +22,20 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: calc_freqPlus
-# key: CALC_FREQPlus
+# name: assemblage
+# key: ASSEMBLAGE
 # --
-CALC_FREQ=_F(OPTION='PLUS_PETITE',
-             NMAX_FREQ=${1:10},
-             ),
+ASSEMBLAGE(INFO=1,
+           MODELE=${1:Model},
+           CHAM_MATER=${2:Material},
+           ${3:CARA_ELEM=Shell},
+           CHARGE=(${4:BoundFix},),
+           NUME_DDL=CO('${6:NUMEDDL}'),
+           MATR_ASSE=(_F(MATRICE=CO('${7:StiffMat}'),OPTION='RIGI_MECA',),
+                      _F(MATRICE=CO('${8:MassMat}'),OPTION='MASS_MECA',),
+                      ),
+           INST=${9:0.0},
+           SOLVEUR=_F(RENUM='${10:METIS}',
+                      METHODE='${11:MULT_FRONT}',
+                      ),
+          );

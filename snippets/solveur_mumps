@@ -26,7 +26,6 @@
 # key: SOLVEURmumps
 # --
 SOLVEUR=_F(METHODE='MUMPS',
-           STOP_SINGULIER='${1:OUI}',
            NPREC=${2:16},
 	   RENUM='${3:AUTO}',
 	   RESI_RELA=${4:-1.0},
@@ -34,4 +33,5 @@ SOLVEUR=_F(METHODE='MUMPS',
 	   ${6:GESTION_MEMOIRE='AUTO',}
 	   ${7:PCENT_PIVOT=20,}
 	   ${8:SYME='NON',}
+	   ${9:STOP_SINGULIER='OUI',}
            ),

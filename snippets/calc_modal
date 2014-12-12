@@ -1,12 +1,12 @@
-# affe_cara_elem --- Aster Mode (snippet)
+# calc_modal --- Aster Mode (snippet)
 #
 
-# Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+# Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 # Keywords: languages, processes, python, oop, Code_Aster
 
-# Copyright (C) 2013  Stefan Reiterer
+# Copyright (C) 2014  Stefan Reiterer
 
-# Author: 2013 Stefan Reiterer
+# Author: 2014 Stefan Reiterer
 #    
 # This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -27,7 +27,8 @@
 # --
 CALC_MODAL(INFO = ${1:1},
            MODELE = ${2:Model},
-           CHAM_MATER=${3:Material},
-           CHARGE = ${4:Boundary},
-           ${5:CALC_FREQBande}
+           ${3:CARA_ELEM =Shell,}
+           CHAM_MATER=${4:Material},
+           CHARGE = ${5:Boundary},
+           ${6:CALC_FREQBande$$(yas-choose-value '("CALC_FREQBande" "CALC_FREQPlus"))}
            );

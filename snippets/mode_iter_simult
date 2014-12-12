@@ -1,4 +1,4 @@
-# calc_freqPlus --- Aster Mode (snippet)
+# mode_iter_simult --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,9 +22,19 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: calc_freqPlus
-# key: CALC_FREQPlus
+# name: mode_iter_simult
+# key: MODE_ITER_SIMULT
 # --
-CALC_FREQ=_F(OPTION='PLUS_PETITE',
-             NMAX_FREQ=${1:10},
-             ),
+MODE_ITER_SIMULT(INFO = ${1:1},
+           MATR_RIGI = ${2:StiffMat},
+           MATR_MASS = ${3:MassMat},
+           METHODE = '${4:SORENSEN}',
+           TYPE_RESU='DYNAMIQUE',
+           ${5:CALC_FREQBande$$(yas-choose-value '("CALC_FREQBande" "CALC_FREQPlus"))}
+           VERI_MODE=_F(STOP_ERREUR='${6:NON}',
+                        PREC_SHIFT=${7:5.0000000000000001E-3},
+                        SEUIL=${8:1.E-4},
+                        STURM='${9:OUI}',
+                        ),
+           ${10:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps"))}
+           );

@@ -1,4 +1,4 @@
-# calc_freqPlus --- Aster Mode (snippet)
+# liaison_rbe3 --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,9 +22,15 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: calc_freqPlus
-# key: CALC_FREQPlus
+# name: liaison_rbe3
+# key: LIAISON_RBE3
 # --
-CALC_FREQ=_F(OPTION='PLUS_PETITE',
-             NMAX_FREQ=${1:10},
-             ),
+LIAISON_RBE3=(_F(GROUP_NO_MAIT='${1:group_ma}',
+                 DDL_MAIT=('DX','DY','DZ',
+                           'DRX','DRY','DRZ',
+                           ),
+                           GROUP_NO_ESCL=(${2:'grp_escl'},),
+                           DDL_ESCL='DX-DY-DZ',
+                           COEF_ESCL=1,
+                           ),
+            ),
