@@ -28,7 +28,7 @@
 POURSUITE(LANG = ${1:'EN'},
 	  PAR_LOT=${2:'OUI'},
           );
-
+# it is recommended to execute MODI_MODELE after POURSUITE 
 ${3:Model} = MODI_MODELE(reuse=$3,
                          MODELE=$3,
                          );
