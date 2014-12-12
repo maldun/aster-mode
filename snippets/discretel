@@ -1,4 +1,4 @@
-# coqueel --- Aster Mode (snippet)
+# discretel --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,12 +22,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: coqueel
-# key: COQUEel
+# name: discretel
+# key: DISCRETel
 # --
-COQUE=(_F(GROUP_MA='${1:group_name}',
-         EPAIS=${2:thickness},
-         ${3:VECTEUR=(1.0,1.0,1.0)$$(yas-choose-value '("VECTEUR=(1.0,1.0,1.0)" 
-            "ANGL_REP=(0.0,0.0)"))}, # defines local x-axis
-         ),
-      ),
+DISCRET=(_F(${1:GROUP_MA$$(yas-choose-value '("GROUP_MA" "GROUP_NO" "NOEUD" "GROUP_NO"))}='${2:group_name}',
+          ${3:K_T_D_N$$(yas-choose-value '("K_T_D_N" "M_T_D_N" "K_TR_D_N" "M_TR_D_N"))}
+           ),
+        ),

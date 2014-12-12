@@ -1,4 +1,4 @@
-# coqueel --- Aster Mode (snippet)
+# k_tr_d_n --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,12 +22,11 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: coqueel
-# key: COQUEel
+# name: k_tr_d_n
+# key: K_TR_D_N
 # --
-COQUE=(_F(GROUP_MA='${1:group_name}',
-         EPAIS=${2:thickness},
-         ${3:VECTEUR=(1.0,1.0,1.0)$$(yas-choose-value '("VECTEUR=(1.0,1.0,1.0)" 
-            "ANGL_REP=(0.0,0.0)"))}, # defines local x-axis
-         ),
+CARA='K_TR_D_N',
+VALE=(${1:KX},${2:KY},${3:KZ},
+      ${4:KRX},${5:KRY},${6:KRZ},
       ),
+SYME='OUI',
