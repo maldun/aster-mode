@@ -1,7 +1,7 @@
 # elas --- Aster Mode (snippet)
 #
 
-# Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+# Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 # Keywords: languages, processes, python, oop, Code_Aster
 
 # Copyright (C) 2013  Stefan Reiterer
@@ -28,7 +28,7 @@
 # --
 ELAS_HYPER = _F(C10 = ${1:C10},
                 C01 = ${2:C01},
-	        C20 = ${3:C20},
-	        K = ${4:K},
-	        RHO = ${5:Density},
-	        ),
+                C20 = ${3:C20},
+                K = ${4:K},
+                RHO = ${5:Density},
+                ),

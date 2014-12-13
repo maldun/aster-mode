@@ -1,12 +1,12 @@
 # elas --- Aster Mode (snippet)
 #
 
-# Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+# Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 # Keywords: languages, processes, python, oop, Code_Aster
 
-# Copyright (C) 2013  Stefan Reiterer
+# Copyright (C) 2014  Stefan Reiterer
 
-# Author: 2013 Stefan Reiterer
+# Author: 2014 Stefan Reiterer
 #    
 # This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -28,6 +28,6 @@
 # --
 ELAS = _F(E = ${1:YoungsMod},
           NU = ${2:PoissonsRatio},
-	  RHO = ${3:Density},
-	  ALPHA = ${4:ALPHA}
+          RHO = ${3:Density},
+          ${4:ALPHA = ALPHA,}
 	  ),
