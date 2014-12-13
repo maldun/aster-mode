@@ -26,6 +26,6 @@
 # key: AFFE_CHAR_MECA
 # --
 AFFE_CHAR_MECA(INFO = ${1:1},
-	       MODELE = ${2:Model},
-	       ${3:DDL_IMPO}
-              );
+               MODELE = ${2:Model},
+               ${3:DDL_IMPO$$(yas-choose-value '("DDL_IMPO" "DDL_IMPOco" "LIAISON_MAIL" "LIAISON_MAILcm" "PESANTEUR" "LIAISON_RBE3"))}
+               );

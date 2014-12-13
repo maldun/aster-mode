@@ -26,7 +26,7 @@
 # key: LIRE_MAILLAGE
 # --
 LIRE_MAILLAGE(UNITE = ${1:20},
-	      FORMAT = ${2:'MED'},
-	      INFO = ${3:1},
-	      ${4:INFO_MED=1,}
+              FORMAT = ${2:'MED'},
+              INFO = ${3:1},
+              ${4:INFO_MED=1,}
               );
