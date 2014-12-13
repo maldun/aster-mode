@@ -1,4 +1,4 @@
-# elas --- Aster Mode (snippet)
+# quad_line --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -21,14 +21,11 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 # -*- coding: utf-8 -*-
-# name: elas
-# group: materiau
-# key: ELAS
+# name: quad_line
+# group: maille
+# key: QUAD_LINE
 # --
-ELAS = _F(E = ${1:YoungsMod},
-          NU = ${2:PoissonsRatio},
-          RHO = ${3:Density},
-          ${4:ALPHA = ALPHA,}
-	  ),
+QUAD_LINE=(_F(${1:TOUT='OUI'$$(yas-choose-value '("TOUT='OUI'" "GROUP_MA='nom_grp'"))},
+              ),
+           ),

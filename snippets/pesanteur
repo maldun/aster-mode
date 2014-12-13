@@ -23,6 +23,7 @@
 
 
 # name: pesanteur
+# group: char
 # key: PESANTEUR
 # --
 PESANTEUR = _F(GRAVITE = ${1:grav},

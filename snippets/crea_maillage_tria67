@@ -1,12 +1,12 @@
 # crea_maillage_tria67 --- Aster Mode (snippet)
 #
 
-# Maintainer: Stefan Reiterer <maldun.finsterschreck@gmail.com>
+# Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 # Keywords: languages, processes, python, oop, Code_Aster
 
-# Copyright (C) 2013  Stefan Reiterer
+# Copyright (C) 2014  Stefan Reiterer
 
-# Author: 2013 Stefan Reiterer
+# Author: 2014 Stefan Reiterer
 #    
 # This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -23,6 +23,7 @@
 
 # -*- coding: utf-8 -*-
 # name: crea_maillage_tria67
+# group: macro
 # key: CREA_MAILLAGEtria67
 # --
 CREA_MAILLAGE(MAILLAGE=${1:Mesh},

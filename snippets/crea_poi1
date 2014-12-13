@@ -1,4 +1,4 @@
-# elas --- Aster Mode (snippet)
+# crea_poi1 --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -21,14 +21,12 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 # -*- coding: utf-8 -*-
-# name: elas
-# group: materiau
-# key: ELAS
+# name: crea_poi1
+# group: maille
+# key: CREA_POI1
 # --
-ELAS = _F(E = ${1:YoungsMod},
-          NU = ${2:PoissonsRatio},
-          RHO = ${3:Density},
-          ${4:ALPHA = ALPHA,}
-	  ),
+CREA_POI1=(_F(NOM_GROUP_MA='${1:grp_no}',
+              GROUP_NO='$1',
+              ),
+          ),

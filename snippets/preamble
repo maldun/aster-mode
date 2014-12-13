@@ -1,4 +1,4 @@
-# unit_calculator --- Aster Mode (snippet)
+# preamble --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,15 +22,42 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: unit_calculator
+# name: preamble
 # group: macro
-# key: UnitCalculator
+# key: preamble
 # --
 import sys, os
 
-# Assuming module is located in the given directory
-sys.path.append(os.path.expanduser("${1:~/}"))
+# Assuming module is in home directory
+
+sys.path.append(os.path.expanduser("~/prog/Python/"))
 
 from UnitCalculator import *
-# choose unit system
-auto_converter(${2:mmNS$$(yas-choose-value '("mmNS" "SI"))})
+auto_converter(mmNS)
+
+from itertools import chain
+
+def create_list_for_function(x,y):
+
+    zipped = zip(x,y)
+    return tuple(chain(*zipped))
+
+from Utilitai.partition import *
+
+def process_group_list(liste,prefix):
+    return tuple([prefix + str(x) for x in liste])    
+    
+def process_fonction(list_x,list_y,unit_x = None,unit_y = None):
+    if len(list_x) != len(list_y):
+        raise Exception
+            
+    if unit_x is None:
+        unit_x = 1.0
+    if unit_y is None:
+        unit_y = 1.0
+                    
+    result = []
+    for i in range(len(list_x)):
+        result += [list_x[i]*unit_x,list_y[i]*unit_y]
+                        
+    return tuple(result)

@@ -23,6 +23,7 @@
 
 
 # name: calc_freqBande
+# group: solveur
 # key: CALC_FREQBande
 # --
 CALC_FREQ=_F(OPTION = 'BANDE',

@@ -23,6 +23,7 @@
 
 
 # name: calc_freqPlus
+# group: solveur
 # key: CALC_FREQPlus
 # --
 CALC_FREQ=_F(OPTION='PLUS_PETITE',

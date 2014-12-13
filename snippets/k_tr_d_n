@@ -23,6 +23,7 @@
 
 
 # name: k_tr_d_n
+# group: element
 # key: K_TR_D_N
 # --
 CARA='K_TR_D_N',

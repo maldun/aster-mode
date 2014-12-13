@@ -24,6 +24,7 @@
 
 # name: coqueel
 # key: COQUEel
+# group: element
 # --
 COQUE=(_F(GROUP_MA='${1:group_name}',
          EPAIS=${2:thickness},

@@ -23,6 +23,7 @@
 
 
 # name: liaison_rbe3
+# group: char
 # key: LIAISON_RBE3
 # --
 LIAISON_RBE3=(_F(GROUP_NO_MAIT='${1:group_ma}',

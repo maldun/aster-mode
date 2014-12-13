@@ -23,6 +23,7 @@
 
 
 # name: solveur_mult
+# group: solveur
 # key: SOLVEURmult
 # --
 SOLVEUR=_F(METHODE='MULT_FRONT',

@@ -23,6 +23,7 @@
 
 
 # name: discretel
+# group: element
 # key: DISCRETel
 # --
 DISCRET=(_F(${1:GROUP_MA$$(yas-choose-value '("GROUP_MA" "GROUP_NO" "NOEUD" "GROUP_NO"))}='${2:group_name}',

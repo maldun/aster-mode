@@ -1,4 +1,4 @@
-# elas --- Aster Mode (snippet)
+# modi_maille --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -21,14 +21,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 # -*- coding: utf-8 -*-
-# name: elas
-# group: materiau
-# key: ELAS
+# name: modi_maille
+# group: maille
+# key: MODI_MAILLE
 # --
-ELAS = _F(E = ${1:YoungsMod},
-          NU = ${2:PoissonsRatio},
-          RHO = ${3:Density},
-          ${4:ALPHA = ALPHA,}
-	  ),
+MODI_MAILLE=(_F(${1:TOUT='OUI'$$(yas-choose-value '("TOUT='OUI'" "GROUP_MA='nom_grp'"))},
+	              OPTION='${2:TRIA6_7$$(yas-choose-value '("TRIA6_7" "QUAD8_9"))}', 
+                PREF_NOEUD='${3:NT}',
+                ${4:PREF_NUME=1,}
+               ),
+            ),

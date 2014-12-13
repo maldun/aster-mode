@@ -1,4 +1,4 @@
-# elas --- Aster Mode (snippet)
+# crea_maillage_quad --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -21,14 +21,10 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 # -*- coding: utf-8 -*-
-# name: elas
-# group: materiau
-# key: ELAS
+# name: crea_maillage
+# key: CREA_MAILLAGE
 # --
-ELAS = _F(E = ${1:YoungsMod},
-          NU = ${2:PoissonsRatio},
-          RHO = ${3:Density},
-          ${4:ALPHA = ALPHA,}
-	  ),
+CREA_MAILLAGE(MAILLAGE=${1:Mesh},
+              ${2:LINE_QUAD$$(yas-choose-value '("LINE_QUAD" "MODI_MAILLE" "CREA_GROUP_MA" "CREA_POI1" "QUAD_LINE" "PENTA15_18" "HEXA20_27"))}
+              );

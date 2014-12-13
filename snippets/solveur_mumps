@@ -23,6 +23,7 @@
 
 
 # name: solveur_mumps
+# group: solveur
 # key: SOLVEURmumps
 # --
 SOLVEUR=_F(METHODE='MUMPS',
