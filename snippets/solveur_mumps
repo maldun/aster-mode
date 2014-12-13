@@ -32,6 +32,5 @@ SOLVEUR=_F(METHODE='MUMPS',
 	   ${5:MATR_DISTRIBUEE='NON',}
 	   ${6:GESTION_MEMOIRE='AUTO',}
 	   ${7:PCENT_PIVOT=20,}
-	   ${8:SYME='NON',}
 	   ${9:STOP_SINGULIER='OUI',}
            ),
