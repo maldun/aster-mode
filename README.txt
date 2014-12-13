@@ -6,7 +6,7 @@ Author: Stefan Reiterer
 Date: 
 06/17/2013
 
-Vers: 0.2
+Vers: 0.3
 
 License
 =======
