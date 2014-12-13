@@ -25,23 +25,23 @@
 # name: calc_champ
 # key: CALC_CHAMP
 # --
-CALC_CHAMP(reuse = Result,
-           RESULTAT = Result,
-           ${1:CONTRAINTE = ('SIGM_ELNO',
+CALC_CHAMP(reuse = ${1:Result},
+           RESULTAT = $1,
+           ${2:CONTRAINTE = ('SIGM_ELNO',
                          'SIGM_NOEU',
                          'SIEF_NOEU',
-                     ),}
-           ${2:DEFORMATION = ('EPSI_ELGA',
-                              'EPSI_ELNO',
-                              'EPSI_NOEU',
-                          ),}
-           ${3:CRITERES = ('SIEQ_NOEU','SIEQ_ELNO',
-                       ),}
-           ${4:FORCE = ('FORC_NODA',
-                        'REAC_NODA',
-                    ),}
-           ${5:ENERGIE = ('ENEL_ELGA',
-                          'ENEL_ELNO',
-                          'ENEL_NOEU',
+                        ),}
+           ${3:DEFORMATION = ('EPSI_ELGA',
+                          'EPSI_ELNO',
+                          'EPSI_NOEU',
+                         ),}
+           ${4:CRITERES = ('SIEQ_NOEU','SIEQ_ELNO',
                       ),}
+           ${5:FORCE = ('FORC_NODA',
+                    'REAC_NODA',
+                   ),}
+           ${6:ENERGIE = ('ENEL_ELGA',
+                      'ENEL_ELNO',
+                      'ENEL_NOEU',
+                     ),}
        );

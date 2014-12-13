@@ -26,7 +26,7 @@
 # key: MECA_STATIQUE
 # --
 MECA_STATIQUE(INFO=${1:1},
-	      MODELE=${2:Model},
+              MODELE=${2:Model},
               CHAM_MATER=${3:Material},
               ${4:CARA_ELEM=Shell,}
               EXCIT=(_F(CHARGE=${5:BoundFix},
