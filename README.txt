@@ -46,9 +46,8 @@ by copying the files or making a link with
 
 ln -s /dir/to/aster-mode/snippets /dir/to/yasnippet/snippets/aster-mode
 
+setup example (in bash using git)
 ==========
-
-setup example (in bash using git):
 
 cd ~/.emacs.d/
 mkdir plugins
@@ -60,6 +59,18 @@ ln -s aster-mode/snippets yasnippet/snippets/aster-mode
 Now open or create ~/.emacs and add the following lines:
 (setq asterDir "/opt/aster/")
 (load "~/.emacs.d/plugins/aster-mode/aster-mode.el")
+
+UnitCalculator
+==============
+
+aster-mode includes a snippet to support usage of UnitCalculator, which
+is useful to bring units into .comm for better readability and to avoid
+errors with manual unit conversion.
+
+Unit calculator can be installed with git by:
+
+(cd to some dir you want e.g. ~/ ) 
+git clone https://github.com/maldun/UnitCalculator.git UnitCalculator
 
 License
 =======
