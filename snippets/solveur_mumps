@@ -30,8 +30,6 @@ SOLVEUR=_F(METHODE='MUMPS',
            NPREC=${2:16},
 	   RENUM='${3:AUTO}',
 	   RESI_RELA=${4:-1.0},
-	   ${5:MATR_DISTRIBUEE='NON',}
 	   ${6:GESTION_MEMOIRE='AUTO',}
 	   ${7:PCENT_PIVOT=20,}
-	   ${9:STOP_SINGULIER='OUI',}
            ),
