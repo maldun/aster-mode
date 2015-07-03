@@ -29,7 +29,7 @@ STAT_NON_LINE(INFO=${1:1},
               MODELE=${2:Model},
               CHAM_MATER=${3:Material},
               EXCIT=(${4:_F(CHARGE=Boundknt,),
-                     _F(CHARGE=Boundary,TYPE_CHARGE='FIXE',FONC_MULT=Fonc),}
+                     _F(CHARGE=Boundary,TYPE_CHARGE='FIXE_CSTE',FONC_MULT=Fonc),}
                  ),
               ${5:COMPORTEMENT$$(yas-choose-value '("COMPORTEMENT" "COMP_INCR" "COMP_ELASt"))}
               INCREMENT=_F(LIST_INST=${6:ListInst},),
