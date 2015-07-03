@@ -30,16 +30,15 @@ STAT_NON_LINE(INFO=${1:1},
               CHAM_MATER=${3:Material},
 	      ${4:CARA_ELEM=Shell,}
               EXCIT=(${5:_F(CHARGE=Boundknt,),
-                     _F(CHARGE=Boundary,TYPE_CHARGE='FIXE_CSTE',FONC_MULT=Fonc),}
-                 ),
+                       _F(CHARGE=Boundary,TYPE_CHARGE='FIXE_CSTE',FONC_MULT=Fonc),}
+              ),
               ${6:COMPORTEMENT$$(yas-choose-value '("COMPORTEMENT" "COMP_INCR" "COMP_ELASt"))}
               INCREMENT=_F(LIST_INST=${7:ListInst},),
               ${8:RECH_LINEAIRE}
               ${9:NEWTON}
               ${10:CONVERGENCE}
               ARCHIVAGE=_F(LIST_INST=${11:Archive},
-                       ),
+              ),
               ${12:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg" "SOLVEURpetsc"))}
 	      ${13:CONTACT=Contact,}
-          );
-
+              );
