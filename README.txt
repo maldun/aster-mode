@@ -24,6 +24,10 @@ Installing:
 
 ===========
 
+Prerequisites:
+
+python-mode has to be installed
+
 Mode: 
 
 Extract aster-mode.el in to a folder and add the lines
