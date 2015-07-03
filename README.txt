@@ -87,7 +87,9 @@ of Code_Aster. If a new development cycle of Code_Aster starts, I will
 create a branch with the old version, but don't add any new features,
 except the are explicitely requested. Since Code_Aster develops really
 fast, and often breaks backward compability with it's prior versions,
-it would be too much effort to keep everything up to date.
+it would be too much effort to keep everything up to date. I will keep
+as much as possible for backwards compability, but if something would create
+incompabilities I won't integrate it!
 Nevertheless this is an open project so people are welcome to contribute
 features for older versions.
 
