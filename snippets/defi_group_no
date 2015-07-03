@@ -4,9 +4,9 @@
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 # Keywords: languages, processes, python, oop, Code_Aster
 
-# Copyright (C) 2014  Stefan Reiterer
+# Copyright (C) 2015  Stefan Reiterer
 
-# Author: 2014 Stefan Reiterer
+# Author: 2015 Stefan Reiterer
 #    
 # This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -26,6 +26,6 @@
 # key: DEFI_GROUP_NO
 # --
 CREA_GROUP_NO=(_F(${4:NOM='Group_1}',
-                  ${5:GROUP_MA=('Group_1'),$$(yas-choose-value '("TOUT='OUI'," "GROUP_MA=('Group_1')," "DIFFE=('Grp_1','Grp_2',)," "UNION=('Grp_1','Grp_2',)," "INTERSEC=('Grp_1','Grp_2',),"))},
+                  ${5:GROUP_MA=('Group_1'),$$(yas-choose-value '("TOUT='OUI'," "GROUP_MA=('Group_1')," "DIFFE=('Grp_1','Grp_2',)," "UNION=('Grp_1','Grp_2',)," "INTERSEC=('Grp_1','Grp_2',),"))}
                   ),
                 ),

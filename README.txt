@@ -33,6 +33,9 @@ Extract aster-mode.el in to a folder and add the lines
 
 to your ~/.emacs
 
+For Salome Meca users: The dir for the bins should be located in
+/dir/to/Salome_Meca/salome_meca2015_1/V2015_1/tools/Code_aster_frontend_20151/
+
 ==========
 
 snippets:
