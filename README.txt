@@ -4,9 +4,9 @@ aster-mode
 
 Author: Stefan Reiterer
 Date: 
-06/17/2013
+06/13/2015
 
-Vers: 0.3
+Vers: 0.4
 
 ===========
 
@@ -78,6 +78,18 @@ Unit calculator can be installed with git by:
 
 (cd to some dir you want e.g. ~/ ) 
 git clone https://github.com/maldun/UnitCalculator.git UnitCalculator
+
+Maintainance
+============
+
+Currently I will only support the current stable and testing versions
+of Code_Aster. If a new development cycle of Code_Aster starts, I will
+create a branch with the old version, but don't add any new features,
+except the are explicitely requested. Since Code_Aster develops really
+fast, and often breaks backward compability with it's prior versions,
+it would be too much effort to keep everything up to date.
+Nevertheless this is an open project so people are welcome to contribute
+features for older versions.
 
 License
 =======
