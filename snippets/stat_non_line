@@ -4,9 +4,9 @@
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
 # Keywords: languages, processes, python, oop, Code_Aster
 
-# Copyright (C) 2014  Stefan Reiterer
+# Copyright (C) 2015  Stefan Reiterer
 
-# Author: 2014 Stefan Reiterer
+# Author: 2015 Stefan Reiterer
 #    
 # This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -31,15 +31,14 @@ STAT_NON_LINE(INFO=${1:1},
               EXCIT=(${4:_F(CHARGE=Boundknt,),
                      _F(CHARGE=Boundary,TYPE_CHARGE='FIXE',FONC_MULT=Fonc),}
                  ),
-              ${5:COMP_INCR}
-              ${6:COMP_ELASt}
-              INCREMENT=_F(LIST_INST=${7:ListInst},),
-              ${8:RECH_LINEAIRE}
-              ${9:NEWTON}
-              ${10:CONVERGENCE}
-              ARCHIVAGE=_F(LIST_INST=${11:Archive},
+              ${5:COMPORTEMENT$$(yas-choose-value '("COMPORTEMENT" "COMP_INCR" "COMP_ELASt"))}
+              INCREMENT=_F(LIST_INST=${6:ListInst},),
+              ${7:RECH_LINEAIRE}
+              ${8:NEWTON}
+              ${9:CONVERGENCE}
+              ARCHIVAGE=_F(LIST_INST=${10:Archive},
                        ),
-              ${12:SOLVEURmult}
-	      ${13:CONTACT=Contact,}
+              ${11:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg" "SOLVEURpetsc"))}
+	      ${12:CONTACT=Contact,}
           );
 

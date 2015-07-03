@@ -32,6 +32,5 @@ MECA_STATIQUE(INFO=${1:1},
               EXCIT=(_F(CHARGE=${5:BoundFix},
                         ),
                      ),
-              ${6:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg"))}
+              ${6:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg" "SOLVEURpetsc"))}
               );
-

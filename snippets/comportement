@@ -27,6 +27,5 @@
 # group: solveur
 # --
 COMPORTEMENT=_F(RELATION='${5:VMIS_ISOT_TRAC}',
-		DEFORMATION='${6:GROT_GDEP}',
+                DEFORMATION='${6:GROT_GDEP}',
                 ),
-         
