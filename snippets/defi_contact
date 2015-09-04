@@ -26,12 +26,12 @@
 # name: defi_contact
 # key: DEFI_CONTACT
 # --
-Contact = DEFI_CONTACT(MODELE=Model,
-                       FORMULATION=${1:'CONTINUE'},
-                       ZONE=(_F(GROUP_MA_MAIT=${2:'master'},
-                               GROUP_MA_ESCL=${3:'slave'},
-                               ${4:ALGO_CONT='PENALISATION',
-			       COEF_PENA_CONT=coeff}
-                               ),
-			     ),
-                        );
+DEFI_CONTACT(MODELE=Model,
+	     FORMULATION=${1:'CONTINUE'},
+             ZONE=(_F(GROUP_MA_MAIT=${2:'master'},
+                      GROUP_MA_ESCL=${3:'slave'},
+                      ${4:ALGO_CONT='PENALISATION',
+			COEF_PENA_CONT=coeff}
+                        ),
+	           ),
+             );
