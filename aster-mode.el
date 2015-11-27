@@ -28,6 +28,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.comm\\'" . aster-mode))
 (add-to-list 'auto-mode-alist '("\\.mess\\'" . aster-mode))
+(add-to-list 'auto-mode-alist '("\\.capy\\'" . aster-mode))
 
 ;; Aster Keyword Collection
 (setq aster-keywords '(
