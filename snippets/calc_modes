@@ -26,9 +26,8 @@
 # key: CALC_MODES
 # --
 CALC_MODES(INFO = ${1:1},
-           MODELE = ${2:Model},
-           ${3:CARA_ELEM =Shell,}
-           CHAM_MATER=${4:Material},
-           CHARGE = ${5:Boundary},
+	   MATR_RIGI=${2:StiffMat},
+           MATR_MASS=${3:MassMat},
+	   ${4:MATR_AMOR=AmorMat},
            ${6:CALC_FREQBande2$$(yas-choose-value '("CALC_FREQBande2" "CALC_FREQPlus2"))}
            )
