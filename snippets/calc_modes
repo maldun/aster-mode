@@ -29,5 +29,6 @@ CALC_MODES(INFO = ${1:1},
 	   MATR_RIGI=${2:StiffMat},
            MATR_MASS=${3:MassMat},
 	   ${4:MATR_AMOR=AmorMat},
-           ${6:CALC_FREQBande2$$(yas-choose-value '("CALC_FREQBande2" "CALC_FREQPlus2"))}
+           ${5:CALC_FREQBande2$$(yas-choose-value '("CALC_FREQBande2" "CALC_FREQPlus2"))}
+	   ${6:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg" "SOLVEURpetsc"))}
            )
