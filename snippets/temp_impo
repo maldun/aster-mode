@@ -22,11 +22,11 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: ddl_impo
+# name: temp_impo
 # group: char
-# key: DDL_IMPO
+# key: TEMP_IMPO
 # --
-DDL_IMPO = (_F(GROUP_MA=('${1:group_name}'),
+TEMP_IMPO = (_F(GROUP_MA=('${1:group_name}'),
                TEMP=${2:0.0},
 	       ),
            ),

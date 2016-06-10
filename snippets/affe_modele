@@ -28,8 +28,8 @@
 AFFE_MODELE(INFO = ${1:1},
             MAILLAGE = ${2:Mesh},
             AFFE = (_F(${3:TOUT = 'OUI'},
-                       PHENOMENE=${4:MECANIQUE$$(yas-choose-value '("MECANIQUE" "THERMIQUE" "ACOUSTIQUE"))},
-                       MODELISATION=${5:3D$$(yas-choose-value '("3D" "SHB" "DKT" "COQUE_3D" "AXIS" "C_PLAN" "D_PLAN"))},
+                       PHENOMENE=${4:'MECANIQUE'$$(yas-choose-value '("'MECANIQUE'" "'THERMIQUE'" "'ACOUSTIQUE'"))},
+                       MODELISATION=${5:'3D'$$(yas-choose-value '("'3D'" "'SHB'" "'DKT'" "'COQUE_3D'" "'AXIS'" "'C_PLAN'" "'D_PLAN'"))},
 	               ),
                    ),
-          );
+          )
