@@ -1,4 +1,4 @@
-# calc_modes --- Aster Mode (snippet)
+# ther_lineaire --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,13 +22,18 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: calc_modes
-# key: CALC_MODES
+# name: ther_lineaire
+# key: THER_LINEAIRE
 # --
-CALC_MODES(INFO = ${1:1},
-	   MATR_RIGI=${2:StiffMat},
-           MATR_MASS=${3:MassMat},
-	   ${4:MATR_AMOR=AmorMat,}
-           ${5:CALC_FREQBande2$$(yas-choose-value '("CALC_FREQBande2" "CALC_FREQPlus2"))}
-	   ${6:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg" "SOLVEURpetsc"))}
-           )
+THER_LINEAIRE(INFO=${1:1},
+              MODELE=${2:Model},
+              CHAM_MATER=${3:Material},
+              ${4:CARA_ELEM=Shell,}
+              EXCIT=(_F(CHARGE=${5:Ther},
+                        ),
+                     ),
+              INCREMENT=_F(LIST_INST=${6:List_Inst},),
+              ETAT_INIT=_F(VALE=${7:0.0},),
+              ARCHIVAGE=_F(LIST_INST=${8:Archive},),
+              ${6:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg" "SOLVEURpetsc"))}
+              )

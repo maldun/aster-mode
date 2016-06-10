@@ -1,4 +1,4 @@
-# calc_modes --- Aster Mode (snippet)
+# affe_char_ther --- Aster Mode (snippet)
 #
 
 # Maintainer: Stefan Reiterer <stefan.harald.reiterer@gmail.com>
@@ -22,13 +22,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-# name: calc_modes
-# key: CALC_MODES
+# name: affe_char_ther
+# key: AFFE_CHAR_THER
 # --
-CALC_MODES(INFO = ${1:1},
-	   MATR_RIGI=${2:StiffMat},
-           MATR_MASS=${3:MassMat},
-	   ${4:MATR_AMOR=AmorMat,}
-           ${5:CALC_FREQBande2$$(yas-choose-value '("CALC_FREQBande2" "CALC_FREQPlus2"))}
-	   ${6:SOLVEURmult$$(yas-choose-value '("SOLVEURmult" "SOLVEURmumps" "SOLVEURpcg" "SOLVEURpetsc"))}
-           )
+AFFE_CHAR_THER(INFO = ${1:1},
+               MODELE = ${2:Model},
+               ${3:TEMP_IMPO$$(yas-choose-value '("TEMP_IMPO" "LIAISON_MAIL" "FLUX_REP"))}
+               )
